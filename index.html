@@ -620,68 +620,42 @@
                     </p>
                 </div>
 
-                <div class="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12">
-                    <!-- Contact Form -->
-                    <div class="animate-on-scroll">
-                        <form id="contact-form" class="space-y-6">
-                            <div>
-                                <label for="name" class="form-label">Name *</label>
-                                <input type="text" id="name" name="name" required class="form-input" placeholder="Your full name">
-                                <div class="form-error" id="name-error"></div>
-                            </div>
-                            
-                            <div>
-                                <label for="email" class="form-label">Email *</label>
-                                <input type="email" id="email" name="email" required class="form-input" placeholder="your.email@example.com">
-                                <div class="form-error" id="email-error"></div>
-                            </div>
-                            
-                            <div>
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project inquiry, collaboration, etc.">
-                            </div>
-                            
-                            <div>
-                                <label for="message" class="form-label">Message *</label>
-                                <textarea id="message" name="message" required rows="5" class="form-input" placeholder="Tell me about your project or inquiry..."></textarea>
-                                <div class="form-error" id="message-error"></div>
-                            </div>
-                            
-                            <button type="submit" class="btn-primary w-full" id="submit-btn">
-                                <span id="submit-text">Send Message</span>
-                                <span id="submit-loading" class="hidden">Sending...</span>
-                            </button>
-                            
-                            <div id="form-success" class="hidden text-center p-4 bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-200 rounded-lg">
-                                Thank you! Your message has been sent successfully.
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- Contact Information -->
-                    <div class="animate-on-scroll">
-                        <div class="space-y-8">
-                            <div>
-                                <h3 class="text-xl font-semibold mb-4">Direct Contact</h3>
-                                <div class="space-y-4">
-                                    <div class="flex items-center space-x-3">
-                                        <span class="text-2xl">📧</span>
+                <div class="max-w-3xl mx-auto">
+                    <!-- Contact Information Grid -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <!-- Direct Contact -->
+                        <div class="animate-on-scroll">
+                            <div class="card">
+                                <h3 class="text-xl font-semibold mb-6 text-center">Direct Contact</h3>
+                                <div class="space-y-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0 w-12 h-12 bg-accent-primary/10 dark:bg-dark-accent-primary/10 rounded-lg flex items-center justify-center">
+                                            <span class="text-2xl">📧</span>
+                                        </div>
                                         <div>
                                             <p class="font-medium">Email</p>
-                                            <p class="text-text-secondary dark:text-dark-text-secondary">patrickudo2004@gmail.com</p>
+                                            <a href="mailto:patrickudo2004@gmail.com" class="text-accent-primary dark:text-dark-accent-primary hover:underline">
+                                                patrickudo2004@gmail.com
+                                            </a>
                                         </div>
                                     </div>
                                     
-                                    <div class="flex items-center space-x-3">
-                                        <span class="text-2xl">📱</span>
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0 w-12 h-12 bg-accent-primary/10 dark:bg-dark-accent-primary/10 rounded-lg flex items-center justify-center">
+                                            <span class="text-2xl">📱</span>
+                                        </div>
                                         <div>
                                             <p class="font-medium">Phone</p>
-                                            <p class="text-text-secondary dark:text-dark-text-secondary">+44 7823 689226</p>
+                                            <a href="tel:+447823689226" class="text-accent-primary dark:text-dark-accent-primary hover:underline">
+                                                +44 7823 689226
+                                            </a>
                                         </div>
                                     </div>
                                     
-                                    <div class="flex items-center space-x-3">
-                                        <span class="text-2xl">📍</span>
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0 w-12 h-12 bg-accent-primary/10 dark:bg-dark-accent-primary/10 rounded-lg flex items-center justify-center">
+                                            <span class="text-2xl">📍</span>
+                                        </div>
                                         <div>
                                             <p class="font-medium">Location</p>
                                             <p class="text-text-secondary dark:text-dark-text-secondary">Manchester, UK</p>
@@ -689,31 +663,76 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div>
-                                <h3 class="text-xl font-semibold mb-4">Social Media</h3>
-                                <div class="flex space-x-4">
-                                    <a href="https://www.linkedin.com/in/patrick-udoh-4791934a/" class="social-linkedin" aria-label="LinkedIn">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
-                                        </svg>
-                                    </a>
+                        <!-- Social & Professional Links -->
+                        <div class="animate-on-scroll">
+                            <div class="card">
+                                <h3 class="text-xl font-semibold mb-6 text-center">Connect Online</h3>
+                                <div class="space-y-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0 w-12 h-12 bg-accent-primary/10 dark:bg-dark-accent-primary/10 rounded-lg flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-accent-primary dark:text-dark-accent-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium">LinkedIn</p>
+                                            <a href="https://www.linkedin.com/in/patrick-udoh-4791934a/" class="text-accent-primary dark:text-dark-accent-primary hover:underline" target="_blank" rel="noopener noreferrer">
+                                                Professional Profile
+                                            </a>
+                                        </div>
+                                    </div>
                                     
-                                    <a href="https://github.com/patrickudo2004" class="social-github" aria-label="GitHub">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
-                                        </svg>
-                                    </a>
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0 w-12 h-12 bg-accent-primary/10 dark:bg-dark-accent-primary/10 rounded-lg flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-accent-primary dark:text-dark-accent-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium">GitHub</p>
+                                            <a href="https://github.com/patrickudo2004" class="text-accent-primary dark:text-dark-accent-primary hover:underline" target="_blank" rel="noopener noreferrer">
+                                                Code Portfolio
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0 w-12 h-12 bg-accent-primary/10 dark:bg-dark-accent-primary/10 rounded-lg flex items-center justify-center">
+                                            <span class="text-2xl">📄</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium">Resume</p>
+                                            <a href="./src/documents/Patrick CV.pdf" class="text-accent-primary dark:text-dark-accent-primary hover:underline" download>
+                                                Download CV
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <div>
-                                <h3 class="text-xl font-semibold mb-4">Response Time</h3>
-                                <p class="text-text-secondary dark:text-dark-text-secondary">
-                                    I typically respond within 24 hours during business days. 
-                                    For urgent inquiries, please use the phone number above.
-                                </p>
+                    <!-- Response Time & Availability -->
+                    <div class="animate-on-scroll">
+                        <div class="card text-center">
+                            <h3 class="text-xl font-semibold mb-4">Let's Work Together</h3>
+                            <p class="text-text-secondary dark:text-dark-text-secondary mb-6 max-w-2xl mx-auto">
+                                I'm always interested in new opportunities and collaborations. Whether you have a project in mind, 
+                                need IT consultation, or just want to connect, I'd love to hear from you.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="mailto:patrickudo2004@gmail.com" class="btn-primary">
+                                    Send Email
+                                </a>
+                                <a href="https://www.linkedin.com/in/patrick-udoh-4791934a/" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                                    Connect on LinkedIn
+                                </a>
                             </div>
+                            <p class="text-sm text-text-secondary dark:text-dark-text-secondary mt-4">
+                                <strong>Response Time:</strong> I typically respond within 24 hours during business days.
+                            </p>
                         </div>
                     </div>
                 </div>
