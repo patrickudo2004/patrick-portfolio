@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patrick Udoh - IT Management Professional and Web Developer. Showcasing expertise in web development, cloud solutions, and IT management with proven results.">
+    <meta name="keywords" content="Patrick Udoh, IT Management, Web Development, Cloud Solutions, AWS, Azure, Portfolio, Manchester, UK">
+    <meta name="author" content="Patrick Udoh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://patrick-udoh.netlify.app/">
+    <meta property="og:title" content="Patrick Udoh - IT Management & Web Development Professional">
+    <meta property="og:description" content="IT Management Professional and Web Developer with proven track record in cloud solutions and business growth.">
+    <meta property="og:image" content="https://patrick-udoh.netlify.app/src/images/og-default.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://patrick-udoh.netlify.app/">
+    <meta property="twitter:title" content="Patrick Udoh - IT Management & Web Development Professional">
+    <meta property="twitter:description" content="IT Management Professional and Web Developer with proven track record in cloud solutions and business growth.">
+    <meta property="twitter:image" content="https://patrick-udoh.netlify.app/src/images/og-default.jpg">
+
+    <title>Patrick Udoh - IT Management & Web Development Professional</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/src/images/favicon.ico">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    
+    <!-- Stylesheets -->
+    <link href="./src/output.css" rel="stylesheet">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Patrick Udoh",
+        "jobTitle": "IT Management & Web Development Professional",
+        "description": "IT Management Professional and Web Developer with expertise in cloud solutions and business growth",
+        "url": "https://patrick-udoh.netlify.app",
+        "sameAs": [
+            "https://linkedin.com/in/patrick-udoh",
+            "https://github.com/patrick-udoh"
+        ],
+        "knowsAbout": ["IT Management", "Web Development", "Cloud Solutions", "AWS", "Azure", "Business Analysis"]
+    }
+    </script>
+</head>
+<body class="antialiased">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-dark-bg-primary/90 backdrop-blur-sm border-b border-gray-200 dark:border-dark-border-color">
+        <nav class="container-custom section-padding py-4" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#home" class="text-xl font-bold text-accent-primary dark:text-dark-accent-primary" aria-label="Patrick Udoh - Home">
+                        PU
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" role="switch" aria-checked="false">
+                        <div class="theme-toggle-thumb"></div>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden p-2" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4 border-t border-gray-200 dark:border-dark-border-color">
+                <div class="flex flex-col space-y-2 pt-4">
+                    <a href="#home" class="nav-link mobile-nav-link" data-section="home">Home</a>
+                    <a href="#experience" class="nav-link mobile-nav-link" data-section="experience">Experience</a>
+                    <a href="#projects" class="nav-link mobile-nav-link" data-section="projects">Projects</a>
+                    <a href="#about" class="nav-link mobile-nav-link" data-section="about">About</a>
+                    <a href="#contact" class="nav-link mobile-nav-link" data-section="contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center section-padding pt-24">
+            <div class="container-custom">
+                <div class="max-w-4xl mx-auto text-center">
+                    <!-- Hero Content -->
+                    <div class="animate-on-scroll">
+                        <h1 class="hero-title font-bold mb-6">
+                            Hi, I'm <span class="text-gradient">Patrick Udoh</span>
+                        </h1>
+                        <p class="text-xl mb-4 text-text-secondary dark:text-dark-text-secondary">
+                            IT Management Professional & Web Developer
+                        </p>
+                        <p class="text-lg mb-8 text-text-secondary dark:text-dark-text-secondary leading-relaxed">
+                            Leading digital innovation and building scalable solutions. From Nigeria to the UK, 
+                            I've driven <strong>20% sales growth</strong> and delivered robust systems using 
+                            AWS, Azure, and modern web technologies.
+                        </p>
+                        
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
+                            <a href="#projects" class="btn-primary text-center">View My Projects</a>
+                            <a href="./src/documents/Patrick CV.pdf" class="btn-secondary text-center" download>Download CV</a>
+                        </div>
+
+                        <!-- Key Stats -->
+                        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200 dark:border-dark-border-color">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-accent-primary dark:text-dark-accent-primary">20%</div>
+                                <div class="text-sm text-text-secondary dark:text-dark-text-secondary">Sales Growth</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-accent-primary dark:text-dark-accent-primary">5+</div>
+                                <div class="text-sm text-text-secondary dark:text-dark-text-secondary">Companies</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-accent-primary dark:text-dark-accent-primary">8+</div>
+                                <div class="text-sm text-text-secondary dark:text-dark-text-secondary">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="section-padding bg-bg-secondary dark:bg-dark-bg-secondary">
+            <div class="container-custom">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="section-title font-bold mb-4">Professional Journey</h2>
+                    <p class="text-lg text-text-secondary dark:text-dark-text-secondary max-w-2xl mx-auto">
+                        From stock management to cloud solutions, here's how I've grown and delivered impact across different roles.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <!-- Timeline Item 1: Euro Foods Group -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="card">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Stock Controller</h3>
+                                    <p class="text-accent-primary dark:text-dark-accent-primary font-medium">Euro Foods Group</p>
+                                    <p class="text-sm text-text-secondary dark:text-dark-text-secondary">Manchester, England, United Kingdom</p>
+                                </div>
+                                <div class="text-text-secondary dark:text-dark-text-secondary">
+                                    <span class="bg-accent-primary/10 dark:bg-dark-accent-primary/10 px-3 py-1 rounded-full text-sm">
+                                        April 2024 - Present
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="space-y-2 text-text-secondary dark:text-dark-text-secondary">
+                                <li>• <strong>Inventory Management:</strong> Monitored stock levels, conducted regular counts, and reconciled discrepancies to ensure accuracy</li>
+                                <li>• <strong>Stock Replenishment:</strong> Forecasted demand, reordered products, and coordinated with suppliers to maintain optimal stock levels</li>
+                                <li>• <strong>Quality Control:</strong> Ensured product safety, managed stock rotation (FIFO), and removed expired or damaged items</li>
+                                <li>• <strong>Warehouse Operations:</strong> Organized stock, optimized storage, and oversaw order fulfilment to ensure timely delivery</li>
+                                <li>• <strong>Reporting:</strong> Generated detailed stock reports, analysed performance, and identified slow-moving or obsolete items</li>
+                                <li>• <strong>Team Leadership:</strong> Supervised and trained warehouse staff to ensure adherence to stock control procedures</li>
+                            </ul>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Inventory Management</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Quality Control</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Team Leadership</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Cost Control</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: E.O Essentials Supermarket -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="card">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">General Manager for IT, Sales and Administration</h3>
+                                    <p class="text-accent-primary dark:text-dark-accent-primary font-medium">E.O Essentials Supermarket</p>
+                                    <p class="text-sm text-text-secondary dark:text-dark-text-secondary">Remote / Abuja, Nigeria</p>
+                                </div>
+                                <div class="text-text-secondary dark:text-dark-text-secondary">
+                                    <span class="bg-accent-primary/10 dark:bg-dark-accent-primary/10 px-3 py-1 rounded-full text-sm">
+                                        Jan 2022 - Jan 2025
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="space-y-2 text-text-secondary dark:text-dark-text-secondary">
+                                <li>• <strong>Created and Managed E-Commerce website:</strong> Enabled online sales, boosting overall sales by 20%</li>
+                                <li>• <strong>Supervised sales staff:</strong> Interviewed and recommended potential staff and supervised current staff</li>
+                                <li>• <strong>Managed inventory:</strong> Provided weekly updates on inventory stock twice a week using Excel sheets</li>
+                                <li>• <strong>Hardware Maintenance:</strong> Ensured optimum hardware performance and procured replacement items</li>
+                                <li>• <strong>Point Of Sales Software:</strong> Procured a better POS to boost better inventory and sales management</li>
+                            </ul>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">E-Commerce</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Team Management</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Excel</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">POS Systems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: Your Table Ads -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="card">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Web Developer/Customer Relationship Management Manager</h3>
+                                    <p class="text-accent-primary dark:text-dark-accent-primary font-medium">Your Table Ads</p>
+                                </div>
+                                <div class="text-text-secondary dark:text-dark-text-secondary">
+                                    <span class="bg-accent-primary/10 dark:bg-dark-accent-primary/10 px-3 py-1 rounded-full text-sm">
+                                        2022 - 2024
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="space-y-2 text-text-secondary dark:text-dark-text-secondary">
+                                <li>• Built and maintained a CRM system for the advertising company</li>
+                                <li>• Managed AWS servers to resolve crashes and ensure system stability</li>
+                                <li>• Synced Azure AD to WordPress for automated user registration</li>
+                            </ul>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">CRM Development</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">AWS</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Azure AD</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">WordPress</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: Marketing Matters Services -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="card">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Web Developer/Lead Generation Specialist</h3>
+                                    <p class="text-accent-primary dark:text-dark-accent-primary font-medium">Marketing Matters Services</p>
+                                </div>
+                                <div class="text-text-secondary dark:text-dark-text-secondary">
+                                    <span class="bg-accent-primary/10 dark:bg-dark-accent-primary/10 px-3 py-1 rounded-full text-sm">
+                                        2021 - 2022
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="space-y-2 text-text-secondary dark:text-dark-text-secondary">
+                                <li>• Worked on the company website to improve functionality and user experience</li>
+                                <li>• Generated leads for business advertisement sales and IT services</li>
+                            </ul>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Web Development</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Lead Generation</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">UX Improvement</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5: Revival House Of Glory International Church -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="card">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Graphics Designer, Information Technology</h3>
+                                    <p class="text-accent-primary dark:text-dark-accent-primary font-medium">Revival House Of Glory International Church (RHOGIC)</p>
+                                    <p class="text-sm text-text-secondary dark:text-dark-text-secondary">Abuja, Nigeria</p>
+                                </div>
+                                <div class="text-text-secondary dark:text-dark-text-secondary">
+                                    <span class="bg-accent-primary/10 dark:bg-dark-accent-primary/10 px-3 py-1 rounded-full text-sm">
+                                        Oct 2019 - Nov 2021
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="space-y-2 text-text-secondary dark:text-dark-text-secondary">
+                                <li>• Updated and maintained up to 5 WordPress Websites</li>
+                                <li>• Designed fliers for the church to increase online viewership</li>
+                                <li>• Assisted in production at HORP: Design and created magazines and book covers for Horn Of Revival Publishing</li>
+                                <li>• Assisted in Media setup and streaming activities</li>
+                                <li>• Hardware Maintenance: Ensured optimum hardware performance and procured replacement items</li>
+                                <li>• Assisted in Social media Content management and Marketing to increase engagement</li>
+                            </ul>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">WordPress</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Graphic Design</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Social Media</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Media Production</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 6: Horn Of Revival Ministry Bible Academy -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="card">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Academic Administrator/IT Manager</h3>
+                                    <p class="text-accent-primary dark:text-dark-accent-primary font-medium">Horn Of Revival Ministry Bible Academy</p>
+                                    <p class="text-sm text-text-secondary dark:text-dark-text-secondary">Abuja, Nigeria</p>
+                                </div>
+                                <div class="text-text-secondary dark:text-dark-text-secondary">
+                                    <span class="bg-accent-primary/10 dark:bg-dark-accent-primary/10 px-3 py-1 rounded-full text-sm">
+                                        Oct 2019 - Nov 2021
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="space-y-2 text-text-secondary dark:text-dark-text-secondary">
+                                <li>• <strong>Attendance Management:</strong> Created an Attendance management system with Microsoft Excel to manage student login and time attendance record</li>
+                                <li>• <strong>Student Data Management:</strong> Working under the Provost, managed student data</li>
+                                <li>• <strong>Project Management:</strong> Managed the Graduate Ceremony process</li>
+                                <li>• <strong>Social Media Management:</strong> Managed social media (Facebook & Twitter) to increase exposure and conversion</li>
+                                <li>• <strong>Graphic Design:</strong> Designed Brand materials and social media design to increase conversion</li>
+                            </ul>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Excel Systems</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Data Management</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Project Management</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Social Media</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 7: HiiT Plc -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="card">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Tutor (Graphics, Web Des. & Dev., MS Office)</h3>
+                                    <p class="text-accent-primary dark:text-dark-accent-primary font-medium">HiiT Plc</p>
+                                    <p class="text-sm text-text-secondary dark:text-dark-text-secondary">Lagos, Nigeria</p>
+                                </div>
+                                <div class="text-text-secondary dark:text-dark-text-secondary">
+                                    <span class="bg-accent-primary/10 dark:bg-dark-accent-primary/10 px-3 py-1 rounded-full text-sm">
+                                        May 2016 - Oct 2017
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="space-y-2 text-text-secondary dark:text-dark-text-secondary">
+                                <li>• Taught courses on Web Design & Development, Graphic Design, Diploma in IT (internet, MS Office)</li>
+                                <li>• Designed Brand Materials for company exposure and conversion</li>
+                                <li>• Supervised Interns and Students at our Student programs</li>
+                            </ul>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Teaching</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Web Development</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Graphic Design</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">MS Office</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 8: Simeon Adebo Library -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="card">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">IT Assistant</h3>
+                                    <p class="text-accent-primary dark:text-dark-accent-primary font-medium">Simeon Adebo Library</p>
+                                    <p class="text-sm text-text-secondary dark:text-dark-text-secondary">Abeokuta, Nigeria</p>
+                                </div>
+                                <div class="text-text-secondary dark:text-dark-text-secondary">
+                                    <span class="bg-accent-primary/10 dark:bg-dark-accent-primary/10 px-3 py-1 rounded-full text-sm">
+                                        Dec 2014 - Oct 2015
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="space-y-2 text-text-secondary dark:text-dark-text-secondary">
+                                <li>• <strong>Hardware Maintenance:</strong> Ensured optimum hardware performance and procured replacement items</li>
+                                <li>• Managed Social media account (Twitter and Facebook) to increase exposure to the library</li>
+                                <li>• Assisted in supervising monthly tour visits from school children</li>
+                            </ul>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Hardware Maintenance</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Social Media</span>
+                                <span class="px-3 py-1 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 text-accent-secondary dark:text-dark-accent-secondary rounded-full text-sm">Event Coordination</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding">
+            <div class="container-custom">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="section-title font-bold mb-4">Featured Projects</h2>
+                    <p class="text-lg text-text-secondary dark:text-dark-text-secondary max-w-2xl mx-auto">
+                        A showcase of my technical projects with real-world impact and measurable results.
+                    </p>
+                </div>
+
+                <!-- Project Filter -->
+                <div class="flex justify-center mb-12 animate-on-scroll">
+                    <div class="flex flex-wrap gap-2 p-1 bg-bg-secondary dark:bg-dark-bg-secondary rounded-lg">
+                        <button class="project-filter active px-4 py-2 rounded-md text-sm font-medium transition-colors" data-filter="all">All</button>
+                        <button class="project-filter px-4 py-2 rounded-md text-sm font-medium transition-colors" data-filter="web">Web Dev</button>
+                        <button class="project-filter px-4 py-2 rounded-md text-sm font-medium transition-colors" data-filter="data">Data Science</button>
+                        <button class="project-filter px-4 py-2 rounded-md text-sm font-medium transition-colors" data-filter="management">IT Management</button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                    <!-- Project 1: E-commerce Platform -->
+                    <div class="project-card animate-on-scroll" data-category="web">
+                        <div class="card group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-4">
+                                <div class="w-full h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-6xl">
+                                    🛒
+                                </div>
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <div class="flex space-x-4">
+                                        <a href="https://eoessentials.com" class="btn-primary text-sm">View Demo</a>
+                                        <a href="https://github.com/patrickudo2004/ecommerce-platform" class="btn-secondary text-sm">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">E-commerce Platform</h3>
+                            <p class="text-text-secondary dark:text-dark-text-secondary mb-4">
+                                Responsive online store with payment integration that boosted client sales by 20%.
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-2xl">📈</span>
+                                    <span class="text-accent-primary dark:text-dark-accent-primary font-semibold">20% Sales ↗</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-2xl">🛒</span>
+                                    <span class="text-sm text-text-secondary dark:text-dark-text-secondary">E-commerce</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">HTML</span>
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">CSS</span>
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">JavaScript</span>
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: CRM System -->
+                    <div class="project-card animate-on-scroll" data-category="management">
+                        <div class="card group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-4">
+                                <div class="w-full h-48 bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center text-white text-6xl">
+                                    ☁️
+                                </div>
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <div class="flex space-x-4">
+                                        <a href="https://yourtableads.com/crm" class="btn-primary text-sm">View Demo</a>
+                                        <a href="https://github.com/patrickudo2004/crm-system" class="btn-secondary text-sm">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Cloud CRM System</h3>
+                            <p class="text-text-secondary dark:text-dark-text-secondary mb-4">
+                                AWS/Azure integrated CRM with automated workflows and real-time analytics.
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-2xl">☁️</span>
+                                    <span class="text-accent-primary dark:text-dark-accent-primary font-semibold">Cloud Sync</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-2xl">🔄</span>
+                                    <span class="text-sm text-text-secondary dark:text-dark-text-secondary">Automation</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">AWS</span>
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">Azure</span>
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">SQL</span>
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Data Visualization Dashboard -->
+                    <div class="project-card animate-on-scroll" data-category="data">
+                        <div class="card group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-4">
+                                <div class="w-full h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-6xl">
+                                    📊
+                                </div>
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <div class="flex space-x-4">
+                                        <a href="https://analytics-dashboard-demo.netlify.app" class="btn-primary text-sm">View Demo</a>
+                                        <a href="https://github.com/patrickudo2004/analytics-dashboard" class="btn-secondary text-sm">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Analytics Dashboard</h3>
+                            <p class="text-text-secondary dark:text-dark-text-secondary mb-4">
+                                Interactive business intelligence dashboard with real-time data visualization.
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-2xl">📊</span>
+                                    <span class="text-accent-primary dark:text-dark-accent-primary font-semibold">Real-time Data</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-2xl">📈</span>
+                                    <span class="text-sm text-text-secondary dark:text-dark-text-secondary">Analytics</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">Python</span>
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">Tableau</span>
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">D3.js</span>
+                                <span class="px-2 py-1 bg-accent-primary/10 dark:bg-dark-accent-primary/10 text-accent-primary dark:text-dark-accent-primary rounded text-xs">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding bg-bg-secondary dark:bg-dark-bg-secondary">
+            <div class="container-custom">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="section-title font-bold mb-4">About Me</h2>
+                    <p class="text-lg text-text-secondary dark:text-dark-text-secondary max-w-2xl mx-auto">
+                        My journey from Nigeria to the UK, and how I'm transforming challenges into opportunities.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="animate-on-scroll">
+                        <h3 class="text-2xl font-semibold mb-6">Professional Journey</h3>
+                        <div class="space-y-4 text-text-secondary dark:text-dark-text-secondary">
+                            <p>
+                                My journey began in Nigeria, where I developed a passion for technology and problem-solving. 
+                                Moving to the UK opened new opportunities to combine my technical skills with business acumen.
+                            </p>
+                            <p>
+                                From managing inventory systems to leading teams and developing cloud solutions, 
+                                I've consistently focused on delivering measurable impact. Whether it's boosting sales by 20% 
+                                or improving operational efficiency, I believe in the power of technology-driven solutions.
+                            </p>
+                            <p>
+                                With expertise spanning AWS, Azure, and modern web technologies, I specialize in building 
+                                scalable systems that drive business growth and operational excellence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="animate-on-scroll">
+                        <h3 class="text-2xl font-semibold mb-6">Core Values & Approach</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-accent-primary/10 dark:bg-dark-accent-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-2xl">🎯</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-2">Results-Driven</h4>
+                                    <p class="text-text-secondary dark:text-dark-text-secondary text-sm">
+                                        Every project I undertake focuses on delivering measurable business value and tangible outcomes.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-accent-secondary/10 dark:bg-dark-accent-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-2xl">🚀</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-2">Innovation Mindset</h4>
+                                    <p class="text-text-secondary dark:text-dark-text-secondary text-sm">
+                                        I embrace new technologies and methodologies to solve problems in creative, efficient ways.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-accent-primary/10 dark:bg-dark-accent-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-2xl">🤝</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-2">Collaborative Leadership</h4>
+                                    <p class="text-text-secondary dark:text-dark-text-secondary text-sm">
+                                        Success comes from empowering teams and fostering an environment of continuous learning.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-bg-secondary dark:bg-dark-bg-secondary">
+            <div class="container-custom">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="section-title font-bold mb-4">Get In Touch</h2>
+                    <p class="text-lg text-text-secondary dark:text-dark-text-secondary max-w-2xl mx-auto">
+                        Let's discuss your next project or collaboration opportunity.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="animate-on-scroll">
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="form-label">Name *</label>
+                                <input type="text" id="name" name="name" required class="form-input" placeholder="Your full name">
+                                <div class="form-error" id="name-error"></div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" required class="form-input" placeholder="your.email@example.com">
+                                <div class="form-error" id="email-error"></div>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project inquiry, collaboration, etc.">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" required rows="5" class="form-input" placeholder="Tell me about your project or inquiry..."></textarea>
+                                <div class="form-error" id="message-error"></div>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full" id="submit-btn">
+                                <span id="submit-text">Send Message</span>
+                                <span id="submit-loading" class="hidden">Sending...</span>
+                            </button>
+                            
+                            <div id="form-success" class="hidden text-center p-4 bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-200 rounded-lg">
+                                Thank you! Your message has been sent successfully.
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="animate-on-scroll">
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4">Direct Contact</h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-2xl">📧</span>
+                                        <div>
+                                            <p class="font-medium">Email</p>
+                                            <p class="text-text-secondary dark:text-dark-text-secondary">patrick.udoh@outlook.com</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-2xl">📱</span>
+                                        <div>
+                                            <p class="font-medium">Phone</p>
+                                            <p class="text-text-secondary dark:text-dark-text-secondary">+44 7123 456789</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-2xl">📍</span>
+                                        <div>
+                                            <p class="font-medium">Location</p>
+                                            <p class="text-text-secondary dark:text-dark-text-secondary">Manchester, UK</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4">Social Media</h3>
+                                <div class="flex space-x-4">
+                                    <a href="https://www.linkedin.com/in/patrick-udoh-4791934a/" class="social-linkedin" aria-label="LinkedIn">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    
+                                    <a href="https://github.com/patrickudo2004" class="social-github" aria-label="GitHub">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4">Response Time</h3>
+                                <p class="text-text-secondary dark:text-dark-text-secondary">
+                                    I typically respond within 24 hours during business days. 
+                                    For urgent inquiries, please use the phone number above.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="section-padding bg-text-primary dark:bg-dark-bg-primary text-white dark:text-dark-text-primary">
+        <div class="container-custom">
+            <div class="text-center">
+                <p class="mb-4">&copy; 2025 Patrick Udoh. All rights reserved.</p>
+                <p class="text-sm text-gray-400 dark:text-dark-text-secondary">
+                    Built with HTML, Tailwind CSS, and Vanilla JavaScript
+                </p>
+                <button id="back-to-top" class="mt-4 p-2 bg-accent-primary hover:bg-accent-hover rounded-full transition-colors" aria-label="Back to top">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+# Image Assets Placeholder
+
+This directory will contain:
+
+## Hero Section
+- patrick-professional.jpg (Professional headshot - 400x500px)
+- patrick-og-image.jpg (Open Graph image - 1200x630px)
+
+## Projects
+- ecommerce-platform.jpg (E-commerce project screenshot)
+- crm-system.jpg (CRM dashboard screenshot)
+- data-dashboard.jpg (Analytics dashboard screenshot)
+- inventory-system.jpg (Inventory management screenshot)
+
+## Icons
+- favicon.ico (Website favicon)
+
+## Recommended Image Specifications
+- Format: WebP with JPEG fallback
+- Compression: Optimized for web
+- Alt text: Descriptive for accessibility
+- Lazy loading: Implemented for performance
+
+## Image Sources
+- Professional headshot: High-quality portrait photo
+- Project screenshots: Actual project interfaces or mockups
+- Icons: SVG preferred for scalability
+
+Note: Replace this file with actual images before deployment.

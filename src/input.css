@@ -1,0 +1,285 @@
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Custom CSS Variables for Theme */
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F9FA;
+  --text-primary: #212529;
+  --text-secondary: #6C757D;
+  --accent-primary: #007BFF;
+  --accent-secondary: #20C997;
+  --accent-hover: #0056B3;
+  --border-color: #DEE2E6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --error: #DC3545;
+  --success: #28A745;
+}
+
+.dark {
+  --bg-primary: #212529;
+  --bg-secondary: #343A40;
+  --text-primary: #E9ECEF;
+  --text-secondary: #ADB5BD;
+  --accent-primary: #0D6EFD;
+  --accent-secondary: #3DDC84;
+  --accent-hover: #3B82F6;
+  --border-color: #495057;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --error: #F87171;
+  --success: #10B981;
+}
+
+/* Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Focus styles for accessibility */
+  *:focus {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+  }
+  
+  /* Skip link for accessibility */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--accent-primary);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .skip-link:focus {
+    top: 6px;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  /* Navigation */
+  .nav-link {
+    @apply relative px-3 py-2 text-sm font-medium transition-colors duration-200;
+    color: var(--text-secondary);
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--accent-primary);
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: var(--accent-primary);
+    border-radius: 1px;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    @apply px-6 py-3 font-medium rounded-lg transition-all duration-200 transform hover:scale-105;
+    background-color: var(--accent-primary);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--accent-hover);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 font-medium rounded-lg border-2 transition-all duration-200;
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    background-color: transparent;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--accent-primary);
+    color: white;
+  }
+  
+  /* Cards */
+  .card {
+    @apply rounded-xl p-6 transition-all duration-300;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px var(--shadow-color);
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--shadow-color);
+  }
+  
+  /* Timeline */
+  .timeline-item {
+    @apply relative pl-8 pb-8;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--border-color);
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-primary);
+  }
+  
+  .timeline-item:last-child::before {
+    display: none;
+  }
+  
+  /* Form Elements */
+  .form-input {
+    @apply w-full px-4 py-3 rounded-lg border transition-colors duration-200;
+    border-color: var(--border-color);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+  
+  .form-input:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium mb-2;
+    color: var(--text-primary);
+  }
+  
+  .form-error {
+    @apply text-sm mt-1;
+    color: var(--error);
+  }
+  
+  /* Theme Toggle */
+  .theme-toggle {
+    @apply w-12 h-6 rounded-full p-1 transition-colors duration-200 cursor-pointer;
+    background-color: var(--border-color);
+  }
+  
+  .theme-toggle.dark {
+    background-color: var(--accent-primary);
+  }
+  
+  .theme-toggle-thumb {
+    @apply w-4 h-4 rounded-full transition-transform duration-200;
+    background-color: white;
+    transform: translateX(0);
+  }
+  
+  .theme-toggle.dark .theme-toggle-thumb {
+    transform: translateX(24px);
+  }
+  
+  /* Social Media Icons - Force visibility in light mode */
+  .social-linkedin {
+    background-color: #1e40af !important; /* blue-800 */
+    color: white !important;
+    padding: 0.75rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .social-linkedin:hover {
+    background-color: #1e3a8a !important; /* blue-900 */
+  }
+  
+  .social-github {
+    background-color: #374151 !important; /* gray-700 */
+    color: white !important;
+    padding: 0.75rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .social-github:hover {
+    background-color: #111827 !important; /* gray-900 */
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  .hero-title {
+    @apply text-3xl;
+  }
+  
+  .section-title {
+    @apply text-2xl;
+  }
+}
+
+@media (min-width: 641px) {
+  .hero-title {
+    @apply text-4xl lg:text-5xl;
+  }
+  
+  .section-title {
+    @apply text-3xl lg:text-4xl;
+  }
+}

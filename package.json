@@ -1,0 +1,29 @@
+{
+  "name": "patrick-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Patrick Udoh - IT Management Professional and Web Developer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "serve": "live-server --port=3000",
+    "test": "echo \"No tests specified for static site\" && exit 0"
+  },
+  "keywords": [
+    "portfolio",
+    "it-management",
+    "web-development",
+    "cloud-solutions",
+    "personal-website"
+  ],
+  "author": "Patrick Udoh",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrick-udoh/portfolio"
+  },
+  "homepage": "https://patrick-udoh.netlify.app"
+}
