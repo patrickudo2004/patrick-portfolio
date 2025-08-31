@@ -167,3 +167,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Accessibility**: Added proper ARIA labels and target="_blank" with rel="noopener noreferrer" for external links
 - **Visual Consistency**: Standardized icon container sizing (w-12 h-12) across all contact methods
 - **Link Functionality**: Implemented proper href attributes for email (mailto:) and phone (tel:) links
+
+## [1.2.4] - 2025-08-31
+
+### Fixed
+- **Professional Journey Formatting**: Removed manual bullet point characters (•) from all experience list items
+- **Double Bullet Points**: Fixed HTML structure where ul elements were displaying both manual and automatic bullets
+- **Visual Consistency**: Improved readability across all 8 professional experience entries
+- **Timeline Section**: Enhanced formatting consistency throughout the experience timeline
+
+### Technical Details
+- Removed 33 manual bullet point characters across all experience entries
+- Fixed formatting in Euro Foods Group, E.O Essentials Supermarket, Your Table Ads, Marketing Matters Services, Revival House Of Glory International Church, Horn Of Revival Ministry Bible Academy, HiiT Plc, and Simeon Adebo Library entries
+- HTML ul elements now properly display single bullet points as intended
+- Maintained all existing content while improving visual presentation
