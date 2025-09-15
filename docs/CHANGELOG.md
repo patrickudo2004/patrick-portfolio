@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2025-09-15
+
+### Security
+- Enhanced security headers in Netlify configuration
+- Added Content Security Policy (CSP) to prevent XSS attacks
+- Implemented X-Content-Type-Options and X-XSS-Protection headers
+- Set strict Referrer-Policy and Permissions-Policy
+- Added frame-ancestors 'none' to prevent clickjacking
+- Restricted resource loading to trusted sources only
+
 ## [1.0.0] - 2025-08-28
 
 ### Added
