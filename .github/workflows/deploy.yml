@@ -30,6 +30,19 @@ jobs:
       run: npm test
       continue-on-error: true
       
+    - name: Verify Netlify Configuration
+      run: |
+        if [ -z "${{ secrets.NETLIFY_AUTH_TOKEN }}" ]; then
+          echo "::error::NETLIFY_AUTH_TOKEN is not set in repository secrets"
+          exit 1
+        fi
+        if [ -z "${{ secrets.NETLIFY_SITE_ID }}" ]; then
+          echo "::error::NETLIFY_SITE_ID is not set in repository secrets"
+          exit 1
+        fi
+        echo "Netlify configuration verified successfully"
+      shell: bash
+
     - name: Deploy to Netlify
       uses: nwtgck/actions-netlify@v2.0
       with:
@@ -43,4 +56,5 @@ jobs:
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-      timeout-minutes: 1
+      timeout-minutes: 5
+      continue-on-error: false
