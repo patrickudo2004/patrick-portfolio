@@ -185,10 +185,10 @@
 - **Backup Testing**: Monthly restoration tests
 
 ### Disaster Recovery
-- **Multiple Hosting**: Primary (Netlify) + Secondary (GitHub Pages)
-- **DNS Failover**: Automatic switching between providers
-- **Content Recovery**: All content stored in version control
+- **Version Control**: All content stored in Git repository
+- **Local Backups**: Regular commits to repository
 - **Documentation**: Clear recovery procedures
+- **Backup**: Regular local backups of repository
 
 ## Compliance Requirements
 

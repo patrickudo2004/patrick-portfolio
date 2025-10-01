@@ -1,48 +1,52 @@
-# Deployment Guide - Patrick Udoh Portfolio
+# Local Development Guide - Patrick Udoh Portfolio
 
-## Quick Start Deployment
+## Development Setup
 
-### Option 1: Netlify (Recommended)
+### Prerequisites
+- Node.js (v16 or higher)
+- Git
+- VS Code or preferred code editor
 
-1. **Connect Repository**
-   - Push code to GitHub repository
-   - Connect GitHub repo to Netlify
-   - Netlify will auto-detect settings from `netlify.toml`
+### Getting Started
 
-2. **Build Settings**
-   - Build command: `npm run build` (or manual CSS build)
-   - Publish directory: `./`
-   - Node version: 18
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/patrick-udoh/portfolio.git
+   cd portfolio
+   ```
 
-3. **Environment Variables**
-   - No environment variables required for basic deployment
-   - Optional: Set up form handling with Netlify Forms
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-4. **Custom Domain**
-   - Add custom domain in Netlify dashboard
-   - SSL certificate automatically provisioned
+3. **Start Development Server**
+   In one terminal, run:
+   ```bash
+   npm run dev
+   ```
+   This will watch for changes to your CSS files.
 
-### Option 2: GitHub Pages
+4. **View the Site**
+   In another terminal, run:
+   ```bash
+   npm run serve
+   ```
+   This will start a local server at `http://localhost:3000`
 
-1. **Repository Setup**
-   - Push code to GitHub repository
-   - Enable GitHub Pages in repository settings
-   - Set source to main branch
-
-2. **Build Process**
-   - GitHub Actions workflow in `.github/workflows/deploy.yml`
-   - Automatically builds and deploys on push to main
-
-### Option 3: Manual Deployment
+## Building for Production
 
 1. **Build Assets**
-   - CSS is already built in `src/output.css`
-   - No additional build step required
+   ```bash
+   npm run build
+   ```
+   This will create optimized CSS in `src/output.css`
 
-2. **Upload Files**
-   - Upload all files to web server
-   - Ensure `index.html` is in root directory
-   - Set up proper MIME types for CSS/JS files
+2. **Test Locally**
+   ```bash
+   npm run serve
+   ```
+   Test the production build at `http://localhost:3000`
 
 ## Pre-Deployment Checklist
 
@@ -50,7 +54,6 @@
 - [x] `index.html` - Main HTML file
 - [x] `src/output.css` - Compiled CSS
 - [x] `src/js/main.js` - JavaScript functionality
-- [x] `netlify.toml` - Netlify configuration
 - [x] `.github/workflows/deploy.yml` - GitHub Actions
 - [ ] Professional headshot image
 - [ ] Project screenshots
@@ -102,12 +105,15 @@
 
 ## Security Headers
 
-Headers are configured in `netlify.toml`:
+Security headers are configured in the HTML `<head>` section:
 - Content Security Policy
 - X-Frame-Options
 - X-XSS-Protection
-- X-Content-Type-Options
-- Referrer Policy
+- Referrer-Policy
+- Permissions-Policy
+- Cache-Control for static assets
+
+These headers help protect against common web vulnerabilities.
 
 ## Performance Monitoring
 
@@ -126,15 +132,14 @@ Headers are configured in `netlify.toml`:
 
 ### Custom Domain Setup
 1. Purchase domain (recommended: patrick-udoh.com)
-2. Update DNS records to point to Netlify
-3. Enable HTTPS (automatic with Netlify)
-4. Set up email forwarding if needed
-
-### DNS Records
-```
-A Record: @ -> 75.2.60.5
-CNAME: www -> patrick-udoh.netlify.app
-```
+2. In your domain registrar's DNS settings, add these records:
+   - A Record: @ -> 185.199.108.153
+   - A Record: @ -> 185.199.109.153
+   - A Record: @ -> 185.199.110.153
+   - A Record: @ -> 185.199.111.153
+3. In your GitHub repository, go to Settings > Pages
+4. Under "Custom domain", enter your domain and follow verification steps
+5. GitHub will automatically provision an SSL certificate
 
 ## Maintenance
 

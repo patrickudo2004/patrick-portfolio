@@ -27,24 +27,20 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 npx tailwindcss -i ./src/input.css -o ./src/output.css --minify
 ```
 
-## Hosting & Deployment
+## Development Setup
 
-### Primary Hosting: Netlify
-- **Advantages**: Automatic deployments, form handling, CDN, free SSL
+### Local Development
+- **Development Server**: Live reload with `npm run serve`
 - **Build Command**: `npx tailwindcss -i ./src/input.css -o ./src/output.css --minify`
-- **Publish Directory**: `./`
-- **Custom Domain**: Support for custom domain configuration
-
-### Alternative Hosting: GitHub Pages
-- **Advantages**: Free, integrated with Git, simple setup
-- **Limitations**: Static files only, no server-side processing
-- **Deployment**: Automatic via GitHub Actions
+- **Watch Mode**: `npm run dev` for automatic CSS rebuilding
+- **Testing**: Manual testing in multiple browsers
+- **Form Handling**: Formspree integration for form processing
 
 ## External Services
 
 ### Form Handling
 - **Formspree**: Contact form backend (100 submissions/month free)
-- **Alternative**: Netlify Forms (100 submissions/month free)
+- **Local Testing**: Test forms in development environment
 
 ### Analytics
 - **PostHog**: Privacy-focused analytics (1M events/month free)
@@ -180,9 +176,9 @@ module.exports = {
 
 ### Production Build
 1. Build optimized CSS: `npm run build`
-2. Test locally with built files
+2. Test locally with `npm run serve`
 3. Commit changes to Git
-4. Push to GitHub (triggers Netlify deployment)
+4. Push to repository for version control
 
 ### Quality Assurance
 - **Code Validation**: HTML5 validator, CSS validator

@@ -257,18 +257,16 @@ Content-Security-Policy:
 
 ## Deployment Architecture
 
-### Build Process
-1. **Development**: Tailwind watch mode
+### Build Pipeline
+1. **Source Control**: Git with GitHub
 2. **Pre-build**: CSS purging, JS minification
 3. **Build**: Generate optimized assets
 4. **Test**: Lighthouse audit, accessibility check
-5. **Deploy**: Netlify deployment with form handling
+5. **Local Testing**: Manual testing across browsers
 
-### Hosting Strategy
-- **Primary**: Netlify with CDN
-- **Backup**: GitHub Pages
-- **Domain**: Custom domain with SSL
-- **Forms**: Netlify Forms or Formspree
-- **Analytics**: PostHog integration
+### Development Strategy
+- **Local Development**: Live server with hot reloading
+- **Version Control**: Git with GitHub
+- **Forms**: Formspree integration for local testing
 
 This architecture ensures a scalable, maintainable, and performant portfolio website that meets all requirements while providing an excellent user experience across all devices and accessibility needs.

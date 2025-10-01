@@ -5,10 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.5] - 2025-09-17
+
+### Changed
+- **URL Updates**: Updated all website URLs from netlify.app to github.io/patrick-portfolio
+- **GitHub Username**: Updated GitHub username from patrick-udoh to patrickudo2004 in all relevant links
+- **Project Links**: Updated analytics dashboard demo link to point directly to the GitHub repository
+- **Structured Data**: Updated JSON-LD structured data with new website URL and GitHub profile
+
 ## [1.0.1] - 2025-09-15
 
 ### Security
-- Enhanced security headers in Netlify configuration
+- Enhanced security headers in application configuration
 - Added Content Security Policy (CSP) to prevent XSS attacks
 - Implemented X-Content-Type-Options and X-XSS-Protection headers
 - Set strict Referrer-Policy and Permissions-Policy
@@ -64,9 +72,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Integrated smooth scrolling navigation with active states
 - Added scroll animations with Intersection Observer
 
-### Deployment Ready
-- Netlify configuration with security headers and redirects
-- GitHub Actions workflow for automated deployment
+### Development Ready
+- Local development environment configured
+- Build process for production assets
 - Performance optimizations for <1s load times
 - Image placeholder structure for easy content updates
 - Comprehensive deployment guide with step-by-step instructions
@@ -88,7 +96,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add professional headshot and project images
 - Update contact information and social media links
 - Configure Formspree form endpoint
-- Deploy to Netlify or GitHub Pages
+- Test production build locally
 - Set up custom domain and SSL certificate
 
 ## [1.2.0] - 2025-08-30

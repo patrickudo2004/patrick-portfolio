@@ -122,7 +122,7 @@ A personal portfolio website for Patrick Udoh, showcasing IT management expertis
 - SEO ranking improvements
 
 ## Technical Constraints
-- Static site hosting (Netlify/GitHub Pages)
+- Static site with local development focus
 - No backend database required
 - Minimal external dependencies
 - Cross-browser compatibility (Chrome, Firefox, Safari, Edge)

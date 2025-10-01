@@ -24,17 +24,16 @@ This portfolio website serves to:
 ## Tech Stack
 
 - **Frontend**: HTML5, CSS3, Tailwind CSS, Vanilla JavaScript
-- **Hosting**: Netlify (primary), GitHub Pages (backup)
-- **Forms**: Formspree integration
-- **Analytics**: PostHog (privacy-focused)
-- **Performance**: Lighthouse CI monitoring
+- **Development**: Node.js, npm
+- **Build Tools**: Tailwind CSS CLI
+- **Linting**: ESLint, Prettier
 
-## Setup Instructions
+## Local Development Setup
 
 ### Prerequisites
 - Node.js (v16 or higher)
 - Git
-- VS Code or Windsurf IDE
+- VS Code or Windsurf IDE (recommended)
 
 ### Installation
 1. Clone the repository:
@@ -47,6 +46,18 @@ This portfolio website serves to:
    ```bash
    npm install
    ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   This will start a local development server at `http://localhost:3000`
+
+4. For production build:
+   ```bash
+   npm run build
+   ```
+   This will create optimized files in the project root.
 
 3. Start development server:
    ```bash
